@@ -22,7 +22,9 @@ export class ProductsEntity {
     @Column({ type: "text"})
     @IsString()
     description_uz: string
-
+    @Column({ type:"int" , nullable : true })
+    @IsString()
+    price: number
     @Column({ type: "text"})
     @IsString()
     description_ru: string
